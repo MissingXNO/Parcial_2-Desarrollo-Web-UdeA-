@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food App (impar - By santiago Giraldo)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Food Management</h1>
+
+    <section id="food-list">
+        <h2>Consultar alimentos</h2>
+        <button id="consultar-btn">Consultar alimentos</button>
+        <ul id="food-results"></ul>
+    </section>
+
+    <section id="add-food-section">
+        <h2>Agregar nuevo alimento</h2>
+        <form id="add-food-form">
+            <label for="food-name">Nombre del alimento:</label>
+            <input type="text" id="food-name" required>
+            
+            <label for="food-description">Descripción:</label>
+            <input type="text" id="food-description" required>
+
+            <label for="food-image">URL de imagen:</label>
+            <input type="text" id="food-image" required>
+            
+            <label for="food-ingredients">Ingredientes (separados por comas):</label>
+            <input type="text" id="food-ingredients" required>
+
+            <button type="submit">Agregar alimento</button>
+        </form>
+    </section>
+
+    <section id="modify-food-section">
+        <h2>Modificar alimento existente</h2>
+        <form id="modify-food-form">
+            <label for="mod-food-name">Nombre del alimento a modificar:</label>
+            <input type="text" id="mod-food-name" required>
+            
+            <label for="mod-food-description">Nueva descripción:</label>
+            <input type="text" id="mod-food-description" required>
+
+            <label for="mod-food-image">Nueva URL de imagen:</label>
+            <input type="text" id="mod-food-image" required>
+
+            <label for="mod-food-ingredients">Nuevos ingredientes (separados por comas):</label>
+            <input type="text" id="mod-food-ingredients" required>
+
+            <button type="submit">Modificar alimento</button>
+        </form>
+    </section>
+</body>
+</html>
